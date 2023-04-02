@@ -1,0 +1,23 @@
+{
+  "name": "@sjc5/crypto",
+  "version": "1.0.0",
+  "description": "High-level crypto utils.",
+  "main": "crypto.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Cook",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjc5/crypto.git"
+  },
+  "keywords": [
+    "crypto",
+    "encryption"
+  ],
+  "dependencies": {
+    "@stablelib/base64": "^1.0.1",
+    "tweetnacl": "^1.0.3"
+  }
+}
