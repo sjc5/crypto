@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "author": "Sam Cook",
   "license": "MIT",
-  "description": "High-level crypto utils.",
+  "description": "Simple, high-level crypto utils in TypeScript.",
   "main": "dist/crypto.js",
   "module": "dist/crypto.mjs",
   "types": "dist/crypto.d.ts",
@@ -17,8 +17,11 @@
     "url": "git+https://github.com/sjc5/crypto.git"
   },
   "keywords": [
+    "high-level",
     "crypto",
-    "encryption"
+    "encryption",
+    "decryption",
+    "typescript"
   ],
   "dependencies": {
     "@stablelib/base64": "^1.0.1",
