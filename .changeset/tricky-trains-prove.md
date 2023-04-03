@@ -2,13 +2,17 @@
 "@sjc5/crypto": major
 ---
 
-## update api
+## Update encrypt / decrypt APIs
 
-This updates the api to take a single object as an argument. This is
-more flexible and allows for more options to be added in the future.
+This updates the encrypt and decrypt APIs to take a single object as an argument.
 
-Instead of passing a message and key as arguments 0 and 1, you now pass
-an object with the message and key as properties.
+This is:
+
+- more flexible
+- less error-prone
+- more explicit
+
+Instead of passing a message and key as arguments 0 and 1 as in version 1.0.0, you now pass an object with the message and key as properties (or encrypted_message and key as properties, in the case of the decrypt function).
 
 ### New usage:
 
