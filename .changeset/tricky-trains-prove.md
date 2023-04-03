@@ -13,9 +13,9 @@ an object with the message and key as properties.
 ### New usage:
 
 ```ts
-import { random_key, encrypt, decrypt } = from '@sjc5/crypto'
+import { random_key, encrypt, decrypt } from "@sjc5/crypto"
 
-const message = 'hello world'
+const message = "hello world"
 const key = random_key()
 
 const encrypted_message = encrypt({ message, key })

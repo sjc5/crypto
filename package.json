@@ -4,11 +4,11 @@
   "author": "Sam Cook",
   "license": "MIT",
   "description": "High-level crypto utils.",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "dist/crypto.js",
+  "module": "dist/crypto.mjs",
+  "types": "dist/crypto.d.ts",
   "scripts": {
-    "build": "tsup index.ts --format cjs,esm --dts",
+    "build": "tsup crypto.ts --format cjs,esm --dts",
     "release": "pnpm run build && changeset publish",
     "lint": "tsc"
   },

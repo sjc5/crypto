@@ -5,12 +5,18 @@ Simple, high-level crypto utils in TypeScript.
 Has two dependencies:
 `tweetnacl` for the underlying crypto and `@stablelib/base64` for base64 encoding utils.
 
+## Installation:
+
+```sh
+npm i @sjc5/crypto
+```
+
 ## Usage:
 
 ```ts
-import { random_key, encrypt, decrypt } = from '@sjc5/crypto'
+import { random_key, encrypt, decrypt } from "@sjc5/crypto"
 
-const message = 'hello world'
+const message = "hello world"
 const key = random_key()
 
 const encrypted_message = encrypt({ message, key })
