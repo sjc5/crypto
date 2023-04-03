@@ -1,6 +1,6 @@
 {
   "name": "@sjc5/crypto",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Sam Cook",
   "license": "MIT",
   "description": "High-level crypto utils.",
