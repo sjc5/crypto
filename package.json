@@ -1,13 +1,17 @@
 {
   "name": "@sjc5/crypto",
   "version": "1.0.0",
-  "description": "High-level crypto utils.",
-  "main": "crypto.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Sam Cook",
   "license": "MIT",
+  "description": "High-level crypto utils.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "release": "pnpm run build && changeset publish",
+    "lint": "tsc"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sjc5/crypto.git"
@@ -19,5 +23,10 @@
   "dependencies": {
     "@stablelib/base64": "^1.0.1",
     "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.3"
   }
 }
